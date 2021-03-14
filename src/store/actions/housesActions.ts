@@ -13,3 +13,8 @@ export const setHouseDetailsNumber = (index: number) => ({
   type: HOUSE_DETAILS,
   index,
 });
+
+export const removeHouse = (id: string) => ({
+  type: REMOVE_HOUSE,
+  id,
+});

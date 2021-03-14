@@ -1,11 +1,13 @@
 import React from "react";
 import styled from "styled-components";
-import { Link } from "react-router-dom";
+
+import { StyledLink } from "./../../../shared/Link";
 
 const FirstSectionContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   width: 100%;
   padding: 5%;
   h1 {
@@ -49,7 +51,7 @@ const FirstSection: React.FC<FirstSectionProps> = () => {
         occaecat cupidatat non proident, sunt in culpa qui officia deserunt
         mollit anim id est laborum
       </p>
-      <Link to="/housesList">ZOBACZ WIĘCEJ</Link>
+      <StyledLink to="/housesList">ZOBACZ WIĘCEJ</StyledLink>
     </FirstSectionContainer>
   );
 };

@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import { Link } from "react-router-dom";
+
+import { StyledLink } from "./../../../shared/Link";
 
 export interface FourthSectionProps {}
 
@@ -8,6 +9,7 @@ const FourthSectionContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   width: 100%;
   h1 {
     font-weight: bold;
@@ -49,7 +51,7 @@ const FourthSection: React.FC<FourthSectionProps> = () => {
         occaecat cupidatat non proident, sunt in culpa qui officia deserunt
         mollit anim id est laborum
       </p>
-      <Link to="/housesList">ZOBACZ WIĘCEJ</Link>
+      <StyledLink to="/housesList">ZOBACZ WIĘCEJ</StyledLink>
     </FourthSectionContainer>
   );
 };
